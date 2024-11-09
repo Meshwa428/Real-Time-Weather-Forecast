@@ -1,0 +1,63 @@
+/* style.css */
+
+/* Light Theme (default) */
+body.light {
+    background-color: #F4F7FC;
+    color: #333333;
+}
+
+#app {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#current-weather {
+    margin: 20px;
+}
+
+#current-temp {
+    font-size: 3em;
+    color: #3A7BD5;
+}
+
+.weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.favorite-cities {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    color: #555555;
+}
+
+button, #city-search {
+    background-color: #3A7BD5;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Dark Theme */
+body.dark {
+    background-color: #2C2C2C;
+    color: #FFFFFF;
+}
+
+body.dark #current-temp {
+    color: #FFCB45;
+}
+
+body.dark button, body.dark #city-search {
+    background-color: #FFCB45;
+    color: #2C2C2C;
+}
+
+body.dark .favorite-cities {
+    color: #BBBBBB;
+}

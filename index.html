@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="light">
+    <div id="app">
+        <div id="theme-toggle">
+            <button onclick="toggleTheme()">Toggle Dark Mode</button>
+        </div>
+        <br><br>
+        <!-- Search & Favorites (optional UI extension) -->
+        <div id="search-bar">
+            <input type="text" id="city-search" placeholder="Enter city name">
+            <button onclick="searchCity()">Search</button>
+        </div>
+        
+        <!-- Current Weather Section -->
+        <div id="current-weather">
+            <h2 id="city-name">City Name</h2>
+            <img id="weather-icon" class="weather-icon" src="" alt="Weather Icon">
+            <div id="current-temp">Temperature</div>
+        </div>
+        
+        <!-- Forecast Chart Section -->
+        <canvas id="forecast-chart" width="400" height="200"></canvas>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
